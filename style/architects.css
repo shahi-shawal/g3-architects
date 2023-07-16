@@ -110,6 +110,55 @@ nav li a{
     line-height: 1.5rem; 
 }
 
+/* feature style  */
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 20px;
+    /* align-items: baseline; */
+}
+.feature-title{
+    color:#131313;
+   font-size: 2.8rem;
+   font-weight: 700;
+   border-left: 4px solid #FF900E;
+   padding-left: 10px;
+}
+.feature-description,
+.feature-box-description{
+    color: #727272;
+    font-weight: 400;
+}
+/* p.feature-description {
+    margin-top: 20px;
+} */
+.feature-box{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-box-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.feature-img{
+    height: 100%;
+    margin-left: 60px;
+}
 /* facts section  */
 .facts-description{
     color: var(--dark-03, #727272);
@@ -122,11 +171,12 @@ nav li a{
     justify-content: space-around;
 }
 
-.facts-card-container .card{
+.facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
-    padding:  30px;
+    padding: 30px;
+    width: 230.831px;
 }
 .facts-card-container .card-satas{
     font-size: 2.8rem;
@@ -143,13 +193,15 @@ nav li a{
 }
 
 
+
 /* resposnsive style  */
  /* mobile and small  */
  @media screen and (max-width:576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav
+    {
         flex-direction: column;
     }
     .banner-title{
@@ -174,6 +226,13 @@ nav li a{
     .team-picture{
         grid-template-columns: 1fr;
     }
+.facts-card-container{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+     }
 }
 /* meduim amd table  */
 @media screen and (min-width:576px) and (max-width:960px) {
